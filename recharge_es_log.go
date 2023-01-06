@@ -1,13 +1,13 @@
 package models
 
 import (
-	"../sdk_protos"
+//	"../sdk_protos"
 	"time"
 )
 
 //记入ES里的日志
 type RechargeESLog struct {
-	Code   sdk_protos.EStateCode `json:"code"`
+//	Code   sdk_protos.EStateCode `json:"code"`
 	Action string                `json:"action"`
 	//	OrderId      int                   `json:"order_id,omitempty"` //灵游坊订单号
 	AccountId        int64     `json:"account_id,omitempty"`

@@ -1,7 +1,7 @@
 package models
 
 import (
-	"../Adoter_Asset"
+//	"../Adoter_Asset"
 	"gorm.io/gorm"
 )
 
@@ -14,7 +14,7 @@ type MailLog struct {
 	Attachment    string                          `xml:"attachment"`
 	Admin_id      uint                            `xml:"-"`
 	AdminName     string                          `xml:"-"`
-	Response_code Adoter_Asset.COMMAND_ERROR_CODE `xml:"-"`
+//	Response_code Adoter_Asset.COMMAND_ERROR_CODE `xml:"-"`
 	Zone_id       int                             `xml:"-"`
 	Zone_name     string                          `xml:"-"`
 	Guid          uint64                          `xml:"-"`

@@ -1,7 +1,7 @@
 package models
 
 import (
-	"../utils"
+//	"../utils"
 	//	"github.com/jinzhu/gorm"
 	"gorm.io/gorm"
 	"strings"
@@ -36,15 +36,17 @@ func (this *GiftCodeType) CheckChannel(channelId string, projectId string) bool 
 		println("exchange debug:", this.ProjectId, projectId)
 
 		arr := strings.Split(this.ChannelId, ",")
-		arrayUtil := utils.ArrayUtil{}
-		if arrayUtil.InStringArray(channelId, arr, true) {
-			if this.ProjectId != "" && arrayUtil.InStringArray(channelId, []string{"18", "56"}, false) { //官渠约束ProjectId的
-				return arrayUtil.InStringArray(projectId, strings.Split(this.ProjectId, ","), true)
-			} else {
-				return true
-			}
-		} else {
-			return false
-		}
+//		arrayUtil := utils.ArrayUtil{}
+		//if arrayUtil.InStringArray(channelId, arr, true) {
+			//if this.ProjectId != "" && arrayUtil.InStringArray(channelId, []string{"18", "56"}, false) { //官渠约束ProjectId的
+				//return arrayUtil.InStringArray(projectId, strings.Split(this.ProjectId, ","), true)
+			//} else {
+				//return true
+			//}
+		//} else {
+			//return false
+		//}
+		
+		return true
 	}
 }
