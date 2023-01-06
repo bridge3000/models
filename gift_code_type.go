@@ -35,7 +35,7 @@ func (this *GiftCodeType) CheckChannel(channelId string, projectId string) bool 
 	} else {
 		println("exchange debug:", this.ProjectId, projectId)
 
-		arr := strings.Split(this.ChannelId, ",")
+//		arr := strings.Split(this.ChannelId, ",")
 //		arrayUtil := utils.ArrayUtil{}
 		//if arrayUtil.InStringArray(channelId, arr, true) {
 			//if this.ProjectId != "" && arrayUtil.InStringArray(channelId, []string{"18", "56"}, false) { //官渠约束ProjectId的
