@@ -22,16 +22,13 @@ type Account struct {
 	DeviceId      string
 	Email         string
 	Password      string
-	//	LastLoginSdkId int    //上次登录的社交SDKID，客户端需要
 	LastLoginSdkId int    //上次登录的社交SDKID，客户端需要
 	LockTime       int64  //被封禁后解封的时间戳
 	RegionId       string `json:"region_id"`
 	LoginedGameIds string //多个game_id使用|分割
-	//	NewsFeed               int    //来源
 	BirthDate   time.Time
 	NickName    string
 	DisplayName string //登录后的显示名称
-	//	UserLoginDays          int32  `gorm:"-"` //已廢棄，暫時保留一個版本，防止客戶端報錯
 	SdkCumulativeDaysLogin int32  //SDK（账号）累计登陆天数
 	SdkContinuousDaysLogin int32  //SDK（账号）连续登陆天数
 	SdkInfo                string //需要上报给数数的属性
